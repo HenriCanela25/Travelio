@@ -1,0 +1,74 @@
+*{
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a3d62;
+    height: 60px;
+    padding: 0 20px 0 20px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.nav-right a:hover{
+    color: white;
+}
+
+nav h2{
+    color: white;
+}
+
+.title-second-part{
+    color: #1D9E75;
+}
+
+.nav-right button{
+    color: white;
+    background-color: #0a3d62;
+    width: 90px;
+    height: 34px;
+    border: 1px solid rgba(151, 151, 151, 0.582);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+}
+
+#searchBtn{
+    background-color: #1D9E75;
+    border-color: #1D9E75;
+}
+
+#searchBtn:hover{
+    background-color: #157557;
+}
+
+.nav-right button:hover{
+    background-color: #262624;
+}
+
+.nav-right input{
+    background-color: #262624;
+    color: white;
+    height: 32px;
+    width: 200px;
+    font-size: 14px;
+    border: 1px solid rgba(151, 151, 151, 0.582);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
