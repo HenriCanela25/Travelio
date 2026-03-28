@@ -185,6 +185,8 @@ nav.scrolled{
 .aboutUsText h4{
     color: #1D9E75;
     font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;  
 }
 
 .aboutUsText p{
@@ -267,4 +269,98 @@ nav.scrolled{
     color: #c2c0b6;
     font-size: 13px;
     line-height: 1.6;
+}
+
+/* Contact Us */
+
+hr {
+    border: none;
+    background-color: #3e3e3b;
+    height: 1px;
+    margin: 0 auto;
+}
+
+#contactUs{
+    background-color: #262624;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+#contactUs h4{
+    color: #1D9E75;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;    
+}
+
+#contactUs h1{
+    margin-bottom: 20px;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 600px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#contactForm label{
+    color: #c2c0b6;
+    font-size: 14px;
+}
+
+#contactForm input{
+    background-color: #30302e;
+    color: white;
+    height: 38px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #3e3e3b;
+    border-radius: 5px;    
+    padding: 0 10px;
+}
+
+#contactForm input:hover{
+    border: 1px solid #6b6b66;
+}
+
+#contactForm textarea{
+    background-color: #30302e;
+    color: white;
+    resize: none;
+    height: 130px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #3e3e3b;
+    border-radius: 5px;    
+    padding: 10px;    
+}
+
+#contactForm textarea:hover{
+    border: 1px solid #6b6b66;
+}
+
+#contactBtn{
+    width: 180px;
+    height: 42px;
+    background-color: #1D9E75;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contactBtn:hover{
+    background-color: #157557;
 }
