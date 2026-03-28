@@ -14,12 +14,14 @@
      <nav>
         <h2>travel<span class="title-second-part">io</span></h2>
         <div class="nav-right">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="#homePage">Home</a>
+            <a href="#aboutUs">About Us</a>
             <a href="#">Contact Us</a>
-            <input type="text" name="search" placeholder="Search destinations...">
-            <button id="searchBtn">Search</button>
-            <button id="clearBtn">Clear</button>
+            <div id="searchGroup">
+                <input type="text" name="search" placeholder="Search destinations...">
+                <button id="searchBtn">Search</button>
+                <button id="clearBtn">Clear</button>
+            </div>
         </div>
      </nav>
 
@@ -60,5 +62,62 @@
             </div>
         </div>
      </div>
+
+     <!-- About us -->
+      <div id="aboutUs">
+        <div class="aboutUsImage">
+            <img src="./images/skiing-with-friends.jpg" alt="People in a cable car">
+        </div>
+        <div class="aboutUsText">
+            <h4>WHO WE ARE</h2>
+            <h1>About us</h1><br>
+            <p>Travelio was founded in 2018 by a group of passionate travellers who believed that discovering the world should be effortless, inspiring, and deeply personal. We curate the finest destinations and experiences so you can focus on what matters — the journey.<br><br>
+                From hidden beach coves in Southeast Asia to the snow-capped peaks of the Alps, our expert team researches every destination to bring you trusted, up-to-date recommendations.
+            </p>
+        </div>
+      </div>
+
+      <!-- Meet Our Team -->
+      <section id="meetOurTeam">
+        <h4>THE PEOPLE BEHIND TRAVELIO</h4>
+        <h1>Meet our team</h1>
+        <p class="ourTeamPara">A passionate group of travellers, designers, and engineers building the future of travel discovery.</p>
+
+        <div class="team-grid">
+            <div class="member-card">
+                <div class="member-avatar">AL</div>
+                <div class="member-body">
+                    <h3>Andrea López</h3>
+                    <p class="member-role">CEO & Co-founder</p>
+                    <p class="member-bio">Avid explorer with 40+ countries visited. Leads the vision and strategy behind Travelio.</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-avatar">HC</div>
+                <div class="member-body">
+                    <h3>Henri Canela</h3>
+                    <p class="member-role">Lead Developer</p>
+                    <p class="member-bio">Full-stack engineer who turns travel dreams into fast, beautiful digital experiences.</p>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-avatar">SC</div>
+                <div class="member-body">
+                    <h3>Sofia Chen</h3>
+                    <p class="member-role">Head of Design</p>
+                    <p class="member-bio">Creates the visual identity and user experience that makes Travelio feel effortless and beautiful.</p>
+                </div>
+            </div> 
+            <div class="member-card">
+                <div class="member-avatar">JM</div>
+                <div class="member-body">
+                    <h3>James Mitchell</h3>
+                    <p class="member-role">Travel Curator</p>
+                    <p class="member-bio">Handpicks every destination on the platform. Former travel journalist with 15 years of experience.</p>
+                </div>
+            </div>                       
+        </div>
+    </section>
 </body>
+<script src="./travel_recommendation.js"></script>
 </html>

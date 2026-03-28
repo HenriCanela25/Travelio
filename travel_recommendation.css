@@ -13,6 +13,9 @@ nav{
     background-color: #0a3d62;
     height: 60px;
     padding: 0 20px 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-right{
@@ -65,6 +68,20 @@ nav h2{
     background-color: #157557;
 }
 
+nav.scrolled{
+    background-color: #0a3d62be;
+    transition: background-color 0.3s ease;
+}
+
+#searchGroup{
+    transition: opacity 0.3s ease;
+}
+
+#searchGroup.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .nav-right input{
     background-color: #262624;
     color: white;
@@ -109,6 +126,10 @@ nav h2{
     gap: 10px;    
 }
 
+#homePageIntro h2{
+    color: #47ecb8;
+}
+
 #homeBtn{
     align-self: center;
     padding: 12px 30px;
@@ -145,4 +166,105 @@ nav h2{
 
 .social-btn:hover{
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* About Us */
+#aboutUs{
+    background-color: #262624;
+    color: white;
+    padding: 60px 80px;
+    height: auto;
+    display: flex;
+    gap: 60px;
+}
+
+.aboutUsText{
+    max-width: 600px;
+}
+
+.aboutUsText h4{
+    color: #1D9E75;
+    font-size: 12px;
+}
+
+.aboutUsText p{
+    color: #c2c0b6;
+}
+
+.aboutUsImage{
+    flex-shrink: 0;
+}
+
+.aboutUsImage img{
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Meet Our Team */
+
+#meetOurTeam{
+    background-color: #262624;
+    padding: 60px 80px;
+    color: white;
+    text-align: center;
+}
+
+#meetOurTeam h4{
+    color: #1D9E75;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+#meetOurTeam h1{
+    margin-bottom: 10px;
+}
+
+.ourTeamPara{
+    color: #c2c0b6;
+    margin-bottom: 40px;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.member-card{
+    border: 1px solid rgba(151, 151, 151, 0.582);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #1D9E75;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.member-role{
+    color: #1D9E75;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.member-bio{
+    color: #c2c0b6;
+    font-size: 13px;
+    line-height: 1.6;
 }
