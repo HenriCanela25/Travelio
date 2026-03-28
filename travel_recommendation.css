@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+/* Navbar */
+
 nav{
     display: flex;
     align-items: center;
@@ -52,14 +54,15 @@ nav h2{
 #searchBtn{
     background-color: #1D9E75;
     border-color: #1D9E75;
-}
-
-#searchBtn:hover{
-    background-color: #157557;
+    transition: background-color 0.2s ease;
 }
 
 .nav-right button:hover{
     background-color: #262624;
+}
+
+#searchBtn:hover{
+    background-color: #157557;
 }
 
 .nav-right input{
@@ -71,4 +74,75 @@ nav h2{
     border: 1px solid rgba(151, 151, 151, 0.582);
     border-radius: 5px;
     padding: 0px 10px;
+}
+
+/* Home page */
+
+#homePage{
+    position: relative;
+}
+
+#homePage img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#homePageIntro{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+#homeBtn{
+    align-self: center;
+    padding: 12px 30px;
+    background-color: #0a3d62;
+    color: white;
+    border: 2px solid #0a3d62;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+#homeBtn:hover{
+    background-color: #072b44;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2 ease;
+}
+
+.social-btn:hover{
+    background-color: rgba(255, 255, 255, 0.15);
 }
