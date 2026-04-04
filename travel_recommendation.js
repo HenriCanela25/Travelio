@@ -150,3 +150,12 @@ function clearResults(){
 
 searchBtn.addEventListener('click', searchDestination);
 clearBtn.addEventListener('click', clearResults);
+
+// Hamburger event listener
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+})

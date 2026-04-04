@@ -91,6 +91,68 @@ nav.scrolled{
     border: 1px solid rgba(151, 151, 151, 0.582);
     border-radius: 5px;
     padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+/* Responsive Navbar */
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    width: auto;
+    height: auto;
+}
+
+#hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 860px){
+    
+    #hamburger{
+        display: flex;
+    }
+
+    .nav-right{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #0a3d62;
+        padding: 20px;
+        gap: 16px;
+        z-index: 99;
+    }
+
+    .nav-right.open{
+        display: flex;
+    }
+    
+    #searchGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #searchGroup input {
+        width: 100%;
+    }
+
+    #searchGroup button {
+        width: 100%;
+    }    
+
 }
 
 /* Home page */
@@ -168,6 +230,47 @@ nav.scrolled{
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Responsive home page */
+
+@media (max-width: 860px) {
+    
+    #homePage img{
+        height: 100vh;
+    }
+
+    #homePageIntro {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        padding: 0 10px;
+    }
+
+    #homePageIntro h1 {
+        font-size: 28px;      /* smaller than desktop */
+    }
+
+    #homePageIntro h2 {
+        font-size: 13px;
+    }
+
+    #homePageIntro p {
+        font-size: 13px;
+    }
+    
+    #homeBtn {
+        padding: 10px 24px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-btn {
+        width: 34px;
+        height: 34px;
+    }    
+}
+
 /* About Us */
 #aboutUs{
     background-color: #262624;
@@ -202,6 +305,38 @@ nav.scrolled{
     height: 350px;
     object-fit: cover;
     border-radius: 12px;
+}
+
+/* Responsive about us */
+
+@media (max-width: 860px) {
+
+    #aboutUs {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;        
+    }
+
+    .aboutUsImage{
+        width: 100%;
+    }
+
+    .aboutUsImage img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .aboutUsText {
+        max-width: 100%;
+    }
+
+    .aboutUsText h1 {
+        font-size: 26px;
+    }
+
+    .aboutUsText p {
+        font-size: 14px;
+    }    
 }
 
 /* Meet Our Team */
@@ -269,6 +404,46 @@ nav.scrolled{
     color: #c2c0b6;
     font-size: 13px;
     line-height: 1.6;
+}
+
+/* Responsive meet our team */
+
+@media (max-width: 860px) {
+    
+    #meetOurTeam {
+        padding: 40px 20px;
+    }
+
+    #meetOurTeam h1 {
+        font-size: 26px;
+    }
+
+    .ourTeamPara {
+        font-size: 14px;
+    }   
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }    
+
+    .member-card {
+        padding: 16px;
+    }    
+
+    .member-avatar {
+        width: 54px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .member-card h3 {
+        font-size: 14px;
+    }
+
+    .member-bio {
+        font-size: 12px;
+    }    
 }
 
 /* Contact Us */
@@ -365,6 +540,38 @@ hr {
     background-color: #157557;
 }
 
+/* Responsive contact us */
+
+@media (max-width: 860px) {
+
+    #contactUs {
+        padding: 40px 40px;
+    }
+
+    #contactUs h1 {
+        font-size: 26px;
+    }
+
+    #contactForm {
+        max-width: 100%;
+        gap: 14px;
+    }
+
+    #contactForm input {
+        height: 42px;
+        font-size: 16px;
+    }
+
+    #contactForm textarea {
+        height: 110px;
+        font-size: 16px;
+    }
+
+    #contactBtn {
+        height: 46px;
+    }
+}
+
 /* Search results */
 
 #searchResults{
@@ -445,4 +652,49 @@ hr {
     font-size: 14px;
     color: #c2c0b6;
     line-height: 1.6;
+}
+
+/* Responsive search results */
+
+@media (max-width: 860px) {
+
+    #searchResults {
+        padding: 40px 20px;
+    }
+
+    #searchResults h1 {
+        font-size: 26px;
+    }
+
+    #resultsFound {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .locationImage {
+        height: 180px;
+    }
+
+    .locationName {
+        font-size: 15px;
+        padding: 10px 10px 4px;
+    }
+
+    .locationDescription {
+        font-size: 13px;
+        padding: 0 10px 10px;
+    }
+
+    .search-icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .empty-title {
+        font-size: 16px;
+    }
+
+    .empty-para {
+        font-size: 13px;
+    }
 }
